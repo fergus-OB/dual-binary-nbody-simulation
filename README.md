@@ -52,3 +52,91 @@ dual-binary-nbody-simulation/
 ├── .gitignore
 └── LICENSE
 ```
+
+## Key Results
+
+### Baseline Orbit Validation
+
+The model reproduces the main orbital structure of HD 74438:
+
+- Inner binary AB: semi-major axis approximately 0.066 AU
+- Inner binary CD: semi-major axis approximately 0.17 AU
+- Outer AB-CD orbit: semi-major axis approximately 5.2 AU
+
+The baseline plots show the inner binary ellipses and the wider barycentric orbit of the two binary centres of mass.
+
+### Long-Term Dynamics
+
+Longer integrations show rosette-like orbital patterns caused by apsidal precession. These plots highlight how small perturbations from the companion binary accumulate over time.
+
+### Chaos Diagnostics
+
+The project includes homoclinic-like encounter visualisations and energy-error diagnostics. These were used to explore the transition between regular and chaotic behaviour in the four-body system.
+
+## Example Outputs
+
+### Inner Binary AB
+
+![Inner Binary AB](outputs/baseline-orbits/InnerBinaryABSingleOrbit.jpg)
+
+### Inner Binary CD
+
+![Inner Binary CD](outputs/baseline-orbits/InnerBinaryCDSingleOrbit.jpg)
+
+### Outer Barycentric Orbit
+
+![Outer Orbit](outputs/baseline-orbits/SingleOuterOrbitAB6years.jpg)
+
+### Energy Conservation
+
+![Energy Conservation](outputs/chaos-diagnostics/EnergyConservation.jpg)
+
+### Long-Term CD Rosette
+
+![CD Rosette](outputs/long-term-dynamics/200YCDOrbit.jpg)
+
+### Homoclinic-Like Encounter
+
+![Homoclinic Encounter](outputs/chaos-diagnostics/Homoclinic-like%20outer%20encounter%20of%20AB%20and%20CD.jpg)
+
+## Skills Demonstrated
+
+- MATLAB scientific computing
+- Numerical ODE integration
+- Newtonian N-body simulation
+- Dynamical systems modelling
+- Barycentric coordinate transformations
+- Energy-conservation diagnostics
+- Orbital visualisation
+- Scientific report writing
+- Mathematical modelling and simulation validation
+
+## Limitations
+
+This is a simplified Newtonian point-mass model. It does not include:
+
+- General relativity
+- Tidal effects
+- Stellar evolution
+- Mass transfer
+- Collision physics
+
+These would be natural extensions for a higher-fidelity astrophysical simulation.
+
+## Future Work
+
+Possible extensions include:
+
+- Rewriting the simulation in Python using `scipy.integrate`
+- Adding a symplectic or high-precision integrator
+- Running longer-term stability tests
+- Adding parameter sweeps over eccentricity and inclination
+- Computing Lyapunov exponents more systematically
+- Reproducing the model using REBOUND or another N-body package
+
+## Report
+
+The full project report is available in:
+
+```text
+report/dual_binary_systems_report.pdf
