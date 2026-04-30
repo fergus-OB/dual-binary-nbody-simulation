@@ -140,3 +140,7 @@ The full project report is available in:
 
 ```text
 report/dual_binary_systems_report.pdf
+
+## License
+
+This project is licensed under the MIT License.
