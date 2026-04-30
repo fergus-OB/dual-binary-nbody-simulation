@@ -1,0 +1,36 @@
+# MATLAB autosaves
+*.asv
+
+# MATLAB figure files
+*.fig
+
+# MATLAB generated/binary files
+*.mat
+*.mex*
+*.slxc
+*.mlappinstall
+*.mltbx
+*.mldatx
+
+# Editor / temporary files
+*.tmp
+*.bak
+~$*
+.DS_Store
+Thumbs.db
+
+# Large generated outputs
+*.avi
+*.mp4
+*.mov
+
+# LaTeX build files
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
